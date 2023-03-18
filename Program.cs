@@ -1,6 +1,6 @@
 ﻿namespace CSharp
 {
-    internal class Program
+    /*internal class Program
     {
         enum classType
         {
@@ -197,5 +197,5 @@
 
             }
         }
-    }
+    }*/
 }
