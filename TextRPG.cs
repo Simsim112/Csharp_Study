@@ -1,6 +1,6 @@
 ﻿namespace Csharp
 {
-    internal class TextRPG
+   /* internal class TextRPG
     {
         enum Job
         {
@@ -28,11 +28,12 @@
         //클래스 선택
         static Job JobChoice()
         {
-            Job choice = Job.None;
             Console.WriteLine("클래스를 선택해주세요");
             Console.WriteLine($"[{(int)Job.knight}] {Job.knight}");
             Console.WriteLine($"[{(int)Job.Archer}] {Job.Archer}");
             Console.WriteLine($"[{(int)Job.Wizard}] {Job.Wizard}");
+
+            Job choice = Job.None;
             int input = Convert.ToInt32(Console.ReadLine());
             switch (input)
             {
@@ -128,8 +129,9 @@
         static void EnterFiled(ref Player player)
         {
             Console.WriteLine("필드에 입장하셨습니다!");
-            Monster monster;
+
             //랜덤 몬스터 생성
+            Monster monster;
             CreateMonster(out monster);
 
             Console.WriteLine("[1] 싸우기");
@@ -176,11 +178,10 @@
         }
         static void Main()
         {
-            Job choice = Job.None;
 
             while (true)
             {
-                choice = JobChoice();
+                Job choice = JobChoice();
                 if (choice == Job.None)
                     continue;
 
@@ -189,5 +190,5 @@
                 EnterGame(ref player);
             }
         }
-    }
+    }*/
 }
